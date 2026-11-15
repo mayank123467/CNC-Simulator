@@ -19,10 +19,16 @@ jobs:
 
       - name: Extract ZIP File
         run: |
-          echo "Extracting ZIP file..."
-          # અહી CNC simulator.zip ફાઈલનું નામ સેટ કરેલું છે
+          echo 'Extracting ZIP file...'
           unzip "CNC simulator.zip" -d extracted_files/
           
       - name: Verify Extracted Files
         run: |
-          echo "Extracted files
+          echo 'Extracted files:'
+          ls -la extracted_files/
+          
+      - name: Show extracted Assets
+        run: |
+          echo 'Checking Shopkit and Premium JS files...'
+          cat extracted_files/base/assets/shopkit.js
+          
