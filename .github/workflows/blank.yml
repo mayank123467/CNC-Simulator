@@ -31,4 +31,3 @@ jobs:
         run: |
           echo 'Checking Shopkit and Premium JS files...'
           cat extracted_files/base/assets/shopkit.js
-          
